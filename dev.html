@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aurelia">
+<meta name="theme-color" content="#120e1c">
+<title>Aurelia Chroniken</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="screen"></canvas>
+
+  <div id="hud" class="hidden">
+    <button id="btn-menu" class="hud-btn" aria-label="Menü"><span></span><span></span><span></span></button>
+    <div id="map-name"></div>
+  </div>
+
+  <div id="controls" class="hidden">
+    <div id="dpad" aria-label="Steuerkreuz">
+      <div class="dp-arm dp-up"><i></i></div>
+      <div class="dp-arm dp-down"><i></i></div>
+      <div class="dp-arm dp-left"><i></i></div>
+      <div class="dp-arm dp-right"><i></i></div>
+      <div class="dp-hub"></div>
+    </div>
+    <div id="ab">
+      <button id="btn-b" class="round-btn" aria-label="B">B</button>
+      <button id="btn-a" class="round-btn" aria-label="A">A</button>
+    </div>
+  </div>
+
+  <div id="dialog" class="hidden">
+    <div id="dialog-name"></div>
+    <div id="dialog-text"></div>
+    <div id="dialog-next"></div>
+  </div>
+  <div id="choice" class="hidden"></div>
+
+  <div id="battle-ui" class="hidden">
+    <div id="b-enemy" class="b-info">
+      <div class="b-row"><span class="nm"></span><span class="lv"></span></div>
+      <div class="b-row"><span class="st"></span><div class="hp"><b>KP</b><div class="hpbar"><i></i></div></div></div>
+    </div>
+    <div id="b-player" class="b-info">
+      <div class="b-row"><span class="nm"></span><span class="lv"></span></div>
+      <div class="b-row"><span class="st"></span><div class="hp"><b>KP</b><div class="hpbar"><i></i></div></div></div>
+      <div class="b-row"><span class="hpnum"></span><div class="expbar"><i></i></div></div>
+    </div>
+    <div id="b-bottom">
+      <div id="b-msg"></div>
+      <div id="b-menu" class="hidden"></div>
+    </div>
+  </div>
+
+  <div id="panel" class="hidden"></div>
+  <div id="title" class="hidden"></div>
+  <div id="toast"></div>
+  <div id="fade"></div>
+  <div id="boot">Lade Aurelia …</div>
+</div>
+
+<script src="js/core.js"></script>
+<script src="js/data/types.js"></script>
+<script src="js/data/moves.js"></script>
+<script src="js/data/monsters.js"></script>
+<script src="js/data/items.js"></script>
+<script src="js/data/maps.js"></script>
+<script src="js/gfx/pixel.js"></script>
+<script src="js/gfx/tiles.js"></script>
+<script src="js/gfx/characters.js"></script>
+<script src="js/gfx/monsters.js"></script>
+<script src="js/engine/input.js"></script>
+<script src="js/engine/audio.js"></script>
+<script src="js/engine/save.js"></script>
+<script src="js/game/mon.js"></script>
+<script src="js/game/ui.js"></script>
+<script src="js/game/game.js"></script>
+<script src="js/game/world.js"></script>
+<script src="js/game/battle.js"></script>
+<script src="js/game/menu.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
